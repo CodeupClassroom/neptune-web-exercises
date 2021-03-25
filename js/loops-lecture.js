@@ -63,8 +63,16 @@
 //     exponent = exponent + 1
 // }
 
-var increase = 1;
-while(increase <= 65536) {
-   increase = increase * 2;
-    console.log(increase);
-}
+// var increase = 1;
+// while(increase <= 65536) {
+//    increase = increase * 2;
+//     console.log(increase);
+// }
+
+var number = Math.floor(Math.random() * 6) +1;
+var guess;
+do {
+    guess = parseInt(prompt("Enter a number between 1 and 6"));
+} while (guess !== number);
+
+alert("Your guess of " + guess + " matches the number " + number + "!");
