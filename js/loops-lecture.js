@@ -35,6 +35,8 @@
 // Tell the user how to end the program (sentinel value)
 // Loop back around and do it all again, over and over, until the user tells to stop
 
+// The price accumulator loop
+
 // var priceOfItem = parseFloat(prompt("Enter the price of your first item"));
 // alert("The price of your item was " + priceOfItem);
 // // create accumulator variable
@@ -52,6 +54,8 @@
 //     }
 // }
 
+// Exponents Loop
+
 // var num = prompt("What number do you want to start with?");
 // var originalNumber = num;
 // var exponent = 2;
@@ -63,16 +67,22 @@
 //     exponent = exponent + 1
 // }
 
+// Simple *2 multiplication loop
+
 // var increase = 1;
 // while(increase <= 65536) {
 //    increase = increase * 2;
 //     console.log(increase);
 // }
 
-var number = Math.floor(Math.random() * 6) +1;
-var guess;
-do {
-    guess = parseInt(prompt("Enter a number between 1 and 6"));
-} while (guess !== number);
+// DO-WHILE LOOPS
 
-alert("Your guess of " + guess + " matches the number " + number + "!");
+// The guessing game
+
+// var number = Math.floor(Math.random() * 6) +1;
+// var guess;
+// do {
+//     guess = parseInt(prompt("Enter a number between 1 and 6"));
+// } while (guess !== number);
+//
+// alert("Your guess of " + guess + " matches the number " + number + "!");
