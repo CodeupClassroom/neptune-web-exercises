@@ -1,3 +1,5 @@
+"use strict";
+
 // While loops
 
 // The pizza loop
@@ -86,3 +88,46 @@
 // } while (guess !== number);
 //
 // alert("Your guess of " + guess + " matches the number " + number + "!");
+
+// Ice Cream Loop
+
+var allCones = Math.floor(Math.random() * 50) + 50;
+//
+// do {
+//     var conesBought = Math.floor(Math.random() * 5) + 1;
+//     console.log(conesBought + " cones sold");
+//
+//     if (conesBought > allCones){
+//         console.log("Cannot sell you " + conesBought + " cones I only have " + allCones);
+//     }
+//     allCones = allCones - conesBought;
+// } while (allCones > 0);
+// console.log("Yay! I sold them all!");
+
+// Zoom Room 4's solution to the Ice Cream Cone loop as presented by Naysa
+// do {
+//     var conesBought = Math.floor(Math.random() * 5) + 1;
+//     if (conesBought > allCones) {
+//         console.log("I cant sell " + conesBought + " I only have  " + allCones + " left sorry");
+//     } else {
+//         allCones = allCones - conesBought;
+//         console.log("Cones Sold " + conesBought + " I have " + allCones + " left to sell");
+//     }
+// } while (allCones > 0);
+// console.log("Yay! I sold them all!");
+
+// FOR LOOPS
+
+// var count = 0;
+// while (count <= 100){
+//     console.log(count);
+//     count = count +1;
+// }
+//
+// for (var count = 0; count <= 100; count = count+1){
+//     console.log(count);
+// }
+
+for (var i = 0; i<=100; i++){
+    console.log(i);
+}
