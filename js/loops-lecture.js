@@ -128,6 +128,6 @@ var allCones = Math.floor(Math.random() * 50) + 50;
 //     console.log(count);
 // }
 
-for (var i = 0; i<=100; i++){
-    console.log(i);
-}
+// for (var i = 0; i<=100; i++){
+//     console.log(i);
+// }
