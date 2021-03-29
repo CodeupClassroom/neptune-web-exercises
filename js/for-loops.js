@@ -56,17 +56,18 @@
 //     console.log(i);
 // }
 
-var string = "";
-for(var i = 0; i < 8; i++) {
-    var word = prompt("Let's make a sentence!");
-    if (word === "curses"){
-        console.log("This is a respectable program!");
-        break;
-        //continue;
-    }
-    string = string + word;
-    console.log("Your sentence is: " + string);
-}
+// var string = "";
+// for(var i = 0; i < 8; i++) {
+//     var word = prompt("Let's make a sentence!");
+//     if (word === "curses"){
+//         console.log("This is a respectable program!");
+//         break;
+//         //continue;
+//     }
+//     string = string + word;
+//     console.log("Your sentence is: " + string);
+// }
+
 
 
 
