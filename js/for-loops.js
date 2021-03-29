@@ -52,10 +52,21 @@
 //     console.log(outputString);
 // }
 
-for (var i = 100; i > 0; i = i - 5){
-    console.log(i);
-}
+// for (var i = 100; i > 0; i = i - 5){
+//     console.log(i);
+// }
 
+var string = "";
+for(var i = 0; i < 8; i++) {
+    var word = prompt("Let's make a sentence!");
+    if (word === "curses"){
+        console.log("This is a respectable program!");
+        break;
+        //continue;
+    }
+    string = string + word;
+    console.log("Your sentence is: " + string);
+}
 
 
 
