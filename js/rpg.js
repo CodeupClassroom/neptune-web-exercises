@@ -29,19 +29,6 @@ var character = {
 }
 
 
-
-// fighter.attack  =  function(enemy) {
-//         var damageRange = this.maxDamage - this.minDamage;
-//         var attackRoll = Math.floor(Math.random() * 20) + this.proficiencyBonus + this.strengthBonus;
-//         if (attackRoll > enemy.armorClass) {
-//             var damage = Math.floor(Math.random() * damageRange) + this.strengthBonus;
-//             enemy.hitPoints = enemy.hitPoints - damage;
-//             console.log(this.name + " hit the " + enemy.type + " with their " + this.weapon + " for " + damage + " points. The " + enemy.type + " has " + enemy.hitPoints + " hit points left");
-//         } else {
-//             console.log(this.name + " missed!");
-//         }
-//     }
-
 var monster = {
     type: "orc",
     strength: 16,
