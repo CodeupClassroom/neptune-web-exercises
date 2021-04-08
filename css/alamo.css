@@ -1,6 +1,26 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url(https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap);
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf)
+}
+
 body {
-    font-family: sans-serif;
+    margin-top: 85px;
+    font-family: Helvetica Neue, Montserrat, Ubuntu, Helvetica, Arial, sans-serif;
     background-color: #f1f0f0;
+    background-image: url(../img/logo.png);
+    background-repeat: repeat-x;
+    background-position: top;
 }
 
 h1 {
@@ -31,9 +51,38 @@ ol {
 
 q {
     font-weight: bold;
-    text-decoration: underline;
 }
 
-#main-branding {
+/*descendant selector*/
+
+/*section>p {*/
+/*    !*color: hotpink;*!*/
+/*}*/
+
+/*section p {*/
+/*    color: hotpink;*/
+/*}*/
+
+a:link {
+    color: darkgreen;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: darkturquoise;
+}
+
+a:active {
+    color: hotpink;
+}
+
+/*.bottom-border:first-of-type {*/
+/*    border-width: 2px;*/
+/*}*/
+
+p::first-letter {
     font-size: 110%;
 }
