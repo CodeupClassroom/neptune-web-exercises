@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    background-color: #f1f0f0;
+}
+
+h1 {
+    color: #0b850b;
+    text-align: center;
+    font-size: 1.9em;
+}
+
+h2, h3 {
+    color: #003b00;
+}
+
+aside, em {
+    font-family: serif;
+}
+
+h1, .bottom-border {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: upper-latin;
+}
+
+q {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#main-branding {
+    font-size: 110%;
+}
