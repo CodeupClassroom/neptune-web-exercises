@@ -83,6 +83,11 @@ a:active {
 /*    border-width: 2px;*/
 /*}*/
 
-p::first-letter {
-    font-size: 110%;
-}
+/*The :first-of-type pseudo-class represents an element that is the first sibling of its type in the list of children of its parent element*/
+/*p:first-of-type {*/
+/*    font-size: 110%;*/
+/*}*/
+
+/*p::first-letter {*/
+/*    font-size: 140%;*/
+/*}*/
