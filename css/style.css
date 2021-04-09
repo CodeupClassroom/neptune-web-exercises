@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+body {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffe6cc;
+    background-image: url(../images/fish-logoa.gif);
+    background-repeat: repeat-x;
+    background-position: top left;
+    font-family: Montserrat, Helvetica Neue, Helvetica, sans-serif;
+    text-align: center;
+}
+header {
+    margin-top: 45px;
+    color: #145214;
+    text-decoration-line: underline;
+}
+
+ul, ol {
+    list-style: upper-latin inside;
+}
+
+section#co-vision img:first-of-type {
+    margin-bottom: 8px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: thin solid black;
+    font-size: 1.2em;
+    text-align: center;
+    border-collapse: collapse;
+}
+td, th {
+    border: thin dotted gray;
+    padding: 10px;
+}
+
+th {
+    background-color: #ffcc99;
+}
+
+a:link {
+    color: #007e7e;
+}
+
+a:visited {
+    color: #333333;
+}
+
+a:hover {
+    background: #f88396;
+    color: #0d5353;
+}
+
+
