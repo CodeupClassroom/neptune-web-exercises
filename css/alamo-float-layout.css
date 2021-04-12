@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    margin-top: 85px;
+    font-family: Roboto, sans-serif;
+    background-color: #f1f0f0;
+    background-image: url(../img/logo.png);
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+main {
+    margin: 0 10px 10px 330px;
+}
+
+#sidebar {
+    width: 300px;
+    float: left;
+    background-color: white;
+    margin: 0 10px 10px 10px;
+}
+
+footer {
+    background-color: white;
+    clear: left;
+}
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    color: #0b850b;
+    text-align: center;
+    font-size: 1.9em;
+}
+
+h2, h3 {
+    color: #003b00;
+}
+
+aside, em {
+    font-family: serif;
+}
+
+h1, .bottom-border {
+    border-bottom: 1px solid black;
+}
+
+ul {
+    list-style: square;
+}
+
+ol {
+    list-style: upper-latin;
+}
+
+q {
+    font-weight: bold;
+}
+
+/*descendant selector*/
+
+/*section>p {*/
+/*    !*color: hotpink;*!*/
+/*}*/
+
+/*section p {*/
+/*    color: hotpink;*/
+/*}*/
+
+a:link {
+    color: darkgreen;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
+
+a:hover {
+    color: darkturquoise;
+}
+
+a:active {
+    color: hotpink;
+}
+
+/*.bottom-border:first-of-type {*/
+/*    border-width: 2px;*/
+/*}*/
+
+/*The :first-of-type pseudo-class represents an element that is the first sibling of its type in the list of children of its parent element*/
+/*p:first-of-type {*/
+/*    font-size: 110%;*/
+/*}*/
+
+/*p::first-letter {*/
+/*    font-size: 140%;*/
+/*}*/
