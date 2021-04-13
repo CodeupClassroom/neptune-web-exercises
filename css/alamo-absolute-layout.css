@@ -25,29 +25,22 @@ body {
     background-position: top;
 }
 
-div#tableContainer {
-    display: table;
-    border-spacing: 20px;
-}
-
-div#tableRow {
-    display: table-row;
-}
-
 main {
-    display: table-cell;
-    background-color: white;
+    margin: 0 330px 10px 10px;
 }
 
 #sidebar {
-    display: table-cell;
+    width: 300px;
+    position: absolute;
+    top: 130px;
+    right: 10px;
     background-color: white;
-    vertical-align: top;
+    margin: 0 10px 10px 10px;
 }
 
 footer {
     background-color: white;
-    vertical-align: top;
+    margin: 0 330px 10px 10px;
 }
 
 h1 {
@@ -81,16 +74,6 @@ ol {
 
 q {
     font-weight: bold;
-}
-
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 5px;
 }
 
 blockquote {

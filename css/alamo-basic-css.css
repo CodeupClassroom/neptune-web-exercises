@@ -25,31 +25,6 @@ body {
     background-position: top;
 }
 
-div#tableContainer {
-    display: table;
-    border-spacing: 20px;
-}
-
-div#tableRow {
-    display: table-row;
-}
-
-main {
-    display: table-cell;
-    background-color: white;
-}
-
-#sidebar {
-    display: table-cell;
-    background-color: white;
-    vertical-align: top;
-}
-
-footer {
-    background-color: white;
-    vertical-align: top;
-}
-
 h1 {
     font-family: Montserrat, sans-serif;
     color: #0b850b;
@@ -61,10 +36,8 @@ h2, h3 {
     color: #003b00;
 }
 
-h3 {
-    text-align: center;
-    position: relative;
-    right: 5px;
+aside, em {
+    font-family: serif;
 }
 
 h1, .bottom-border {
@@ -81,21 +54,6 @@ ol {
 
 q {
     font-weight: bold;
-}
-
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-blockquote {
-    position: relative;
-    left: 8px;
 }
 
 /*descendant selector*/
@@ -122,12 +80,6 @@ a:hover {
 
 a:active {
     color: hotpink;
-}
-
-img[src*="logo"] {
-    position: fixed;
-    bottom: 10px;
-    right: 0;
 }
 
 /*.bottom-border:first-of-type {*/
