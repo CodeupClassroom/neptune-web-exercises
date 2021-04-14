@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Antonio', sans-serif;
+}
+
+nav {
+    background: #1b214c;
+    color: whitesmoke;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+header p, header h3 {
+    padding: .5em;
+}
+
+#branding {
+    margin-right: auto;
+}
+
+footer nav {
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: .5em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+footer ul:nth-of-type(2) {
+    margin-right: auto;
+}
+
+footer p {
+    box-sizing: border-box;
+    width: 40vw;
+    padding: .5em
+}
+
+#copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #eeb71e;
+    color: #1b214c;
+    padding: .8em 1em 1em 1em;
+}
+
+#container {
+    margin: auto;
+    background-color: #353758;
+}
+
+#main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80vw;
+    margin: auto;
+    padding: 1em;
+}
+
+.card {
+    background: whitesmoke;
+    color: #1b214c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: .5em;
+    margin: 8px 20px;
+}
+
+.card>* {
+    margin: 8px 0;
+}
+
+.card-name {
+    font-size: 2em;
+}
+
+.card img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.card ul {
+    display: flex;
+    list-style: none;
+    font-size: 4em;
+    margin-top: -.25em;
+}
+
+.card ul li {
+    margin: 0 4px;
+}
+
+
+
