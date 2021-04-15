@@ -98,16 +98,6 @@ blockquote {
     left: 8px;
 }
 
-/*descendant selector*/
-
-/*section>p {*/
-/*    !*color: hotpink;*!*/
-/*}*/
-
-/*section p {*/
-/*    color: hotpink;*/
-/*}*/
-
 a:link {
     color: darkgreen;
 }
@@ -130,15 +120,17 @@ img[src*="logo"] {
     right: 0;
 }
 
-/*.bottom-border:first-of-type {*/
-/*    border-width: 2px;*/
-/*}*/
+@media screen and (max-width: 768px) {
 
-/*The :first-of-type pseudo-class represents an element that is the first sibling of its type in the list of children of its parent element*/
-/*p:first-of-type {*/
-/*    font-size: 110%;*/
-/*}*/
+    div#tableContainer, div#tableRow {
+        display: contents;
+    }
 
-/*p::first-letter {*/
-/*    font-size: 140%;*/
-/*}*/
+    #main, #sidebar {
+        display: block;
+    }
+
+    img[src*="logo"] {
+        display: none;
+    }
+}
