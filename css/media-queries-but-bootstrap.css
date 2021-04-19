@@ -1,0 +1,18 @@
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    background: #afafaf;
+}
+
+i {
+    font-size: 2em;
+}
+
+/* Large Breakpoint from Bootstrap https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints */
+@media (min-width: 992px) {
+    nav ul li {
+        background: transparent;
+    }
+}
