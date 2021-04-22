@@ -14,7 +14,7 @@
         // Easy: we use square brackets!
 
     var testArray = [];
-
+    
     // Our testArray variable has now been declared, but it is an empty array. To declare an array with information inside of it, we would do the following.
 
     var instructors = ["David", "Jay", "Javier", "Cody The Duck"];
