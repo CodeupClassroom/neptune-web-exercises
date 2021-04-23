@@ -65,11 +65,6 @@ transformButton.onclick = function() {
     } else {
         theHulk.setAttribute("data-intelligence", "low");
     }
-    // var hulkNameElement = document.getElementById("theHulk");
-    // var hulkName = hulkNameElement.innerHTML;
-    // if (hulkStrength === "normal") {
-    //     hulkNameElement.innerHTML = "Bruce Banner"
-    // }
     var hulkNameElement = document.getElementById("theHulk");
     var output = hulkState + " is currently in " + hulkState + " state. His strength is " + hulkStrength + " and his intelligence is " + hulkIntelligence;
     if (hulkStrength === "super") {
