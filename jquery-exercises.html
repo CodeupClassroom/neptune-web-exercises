@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Introduction</title>
+    <style>
+        /*h1 {color: }*/
+    </style>
+</head>
+<body>
+<h1>Amazing Page</h1>
+<div id="wrapItUp">
+<p id="introToTheList">This is going to be an amazing list</p>
+<!--    <p id="introToTheList">What is going to happen</p>-->
+<ul id="theList">
+    <li class="doggysFaveFoods">Raw steak</li>
+    <li class="doggysFaveFoods">Hot dogs</li>
+    <li class="doggysFaveFoods">Fried liver</li>
+    <li class="doggysFaveFoods">Cheese</li>
+    <li>Kibble</li>
+</ul>
+</div>
+<p id="doggysFaveFoods">Not going to get the red border</p>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // alert("your page has finished loading");
+      // to get the text only
+    // var theDiv = $("#wrapItUp").text();
+    // // to get everything between the tags
+    // //   var theDiv = $("#wrapItUp").html();
+    // // alert(theDiv);
+    // var theListIntro = $("#introToTheList").html();
+    // alert(theListIntro);
+    //    $(".doggysFaveFoods").css("border", "solid red 1px");
+      $("li").css("font-size", "20px");
+      $("h1, p, li").css("background-color", "palegoldenrod");
+      var theHeadersContent = $("h1").html();
+      //alert(theHeadersContent);
+      var theListItems = $("li").each(function(){
+          alert($(this).html());
+          // doesn't work:
+          // alert($("li").html());
+      });
+
+      // alert(theListItems);
+  });
+</script>
+</body>
+</html>
