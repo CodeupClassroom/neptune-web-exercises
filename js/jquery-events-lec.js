@@ -104,12 +104,57 @@
 
     // ********* Keyboard Events **********
 
+    // keyboard events fired off in order keydown->keypress->keyup
+
+    // keydown
+
+    // recognizes all keyboard keys when they are pushed down
+    // repeats as the key is held down.
+
+    // $(document).keydown(function(event) {
+    //     console.log(event.key);
+    // })
+
+    // keypress
+    // recognizes the character that is typed
+    // only recognizes keys that are can be typed.
+
+    // $(document).keypress(function(event) {
+    //     console.log(event.key)
+    // })
+
+    // keyup
+
+    // recognizes all keyboard keys when they are released.
+    // fire off only once per key push
+
+    // $(document).keyup(function(event) {
+    //     console.log(event.keyCode, " is equivalent to " + event.key)
+    // })
+
     // Key event
-    document.addEventListener("keyup", function(event){
-        console.log(event);
-        if (event.key === " ") {
-            document.querySelector(".space-bar").style.display = "inline";
+    // document.addEventListener("keyup", function(event){
+    //     console.log(event);
+    //     if (event.key === " ") {
+    //         document.querySelector(".space-bar").style.display = "inline";
+    //     }
+    // });
+
+    // jQuery Keyup Event
+    // Using event.key
+
+    // $(document).keyup(function(event) {
+    //     if(event.key === " ") {
+    //         $('.space-bar').css('display', 'inline');
+    //     }
+    // })
+
+    // Using event.keyCode
+
+    $(document).keyup(function(event){
+        if(event.keyCode === 32) {
+            $('.space-bar').css('display', 'inline');
         }
-    });
+    })
 
 })();

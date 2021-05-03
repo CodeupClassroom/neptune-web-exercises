@@ -33,17 +33,32 @@
     // var theListIntro = $("#introToTheList").html();
     // alert(theListIntro);
     //    $(".doggysFaveFoods").css("border", "solid red 1px");
-      $("li").css("font-size", "20px");
-      $("h1, p, li").css("background-color", "palegoldenrod");
-      var theHeadersContent = $("h1").html();
-      //alert(theHeadersContent);
-      var theListItems = $("li").each(function(){
-          alert($(this).html());
-          // doesn't work:
-          // alert($("li").html());
-      });
+    //   $("li").css("font-size", "20px");
+    //   $("h1, p, li").css("background-color", "palegoldenrod");
+    //   var theHeadersContent = $("h1").html();
+    //   //alert(theHeadersContent);
+    //   var theListItems = $("li").each(function(){
+    //       alert($(this).html());
+    //       // doesn't work:
+    //       // alert($("li").html());
+    //   });
 
       // alert(theListItems);
+
+      $('h1').click(function() {
+          $(this).css('background-color', 'red');
+      })
+
+      $('p').dblclick(function() {
+          $('p').css('font-size', '18px');
+      })
+
+      $('.doggysFaveFoods').hover(function(){
+          $(this).css('color', 'red');
+      }, function() {
+          $(this).css('color', 'black');
+      })
+
   });
 </script>
 </body>
