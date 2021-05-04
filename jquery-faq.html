@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery FAQ</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+
+        .highlight {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+<dl>
+  <dt>How</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ex fugit maxime repudiandae sit. Accusantium adipisci aliquid at autem eos error est exercitationem illo impedit inventore, neque sit vitae!</dd>
+  <dt>What</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ex fugit maxime repudiandae sit. Accusantium adipisci aliquid at autem eos error est exercitationem illo impedit inventore, neque sit vitae!</dd>
+  <dt>When</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ex fugit maxime repudiandae sit. Accusantium adipisci aliquid at autem eos error est exercitationem illo impedit inventore, neque sit vitae!</dd>
+  <dt>Where</dt>
+  <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ex fugit maxime repudiandae sit. Accusantium adipisci aliquid at autem eos error est exercitationem illo impedit inventore, neque sit vitae!</dd>
+</dl>
+<p><a href="#">Take the One Ring On and Off</a></p>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+  $("dd").addClass("invisible");
+  $("a").click(function(){
+    $("dd").toggleClass("invisible");
+  });
+
+  $("dt").click(function(){
+      $(this).toggleClass("highlight");
+  });
+</script>
+</body>
+</html>
