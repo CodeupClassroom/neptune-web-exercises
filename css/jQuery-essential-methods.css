@@ -24,7 +24,12 @@
     color: hotpink;
 }
 
+
 ::selection {
     background-color: rebeccapurple;
     color: white;
+}
+
+.sansSerif {
+    font-family: sans-serif;
 }
