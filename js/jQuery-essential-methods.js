@@ -80,5 +80,13 @@ $(document).ready(function(){
 
     $("main ul li").last().css("text-decoration", "underline dotted");
 
+    $("h2").hover(
 
+        function(){
+            var theNextOne = $(this).next();
+        theNextOne.slideUp("slow");
+    },
+        function(){
+            $(this).next().slideDown("slow");
+        });
 });

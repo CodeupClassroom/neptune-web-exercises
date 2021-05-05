@@ -25,6 +25,29 @@
   <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eveniet ex fugit maxime repudiandae sit. Accusantium adipisci aliquid at autem eos error est exercitationem illo impedit inventore, neque sit vitae!</dd>
 </dl>
 <p><a href="#">Take the One Ring On and Off</a></p>
+<ul>
+    <h3>The Park</h3>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+</ul>
+<ul>
+    <h3>The Other Park</h3>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+</ul>
+
+<ul>
+    <h3>Yet Other Park</h3>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+    <li>Fact</li>
+</ul>
+<button id="lastLiYellow">Make the Last List Item Yellow</button>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script>
   $("dd").addClass("invisible");
@@ -34,6 +57,20 @@
 
   $("dt").click(function(){
       $(this).toggleClass("highlight");
+  });
+
+  $("#lastLiYellow").click(function(){
+      $("ul").each(function(){
+          $(this).children().last().css("background", "cornsilk");
+      });
+  });
+
+  $("h3").click(function(){
+      $(this).nextAll().css("font-weight", "bold");
+  });
+
+  $("li").click(function(){
+      $(this).parent().children("li").first().css("color", "blue");
   });
 </script>
 </body>
