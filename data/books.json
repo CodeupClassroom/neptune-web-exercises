@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Garfield at Large: His First Book",
+    "author": {
+      "firstName": "Jim",
+      "lastName": "Davis"
+    }
+  },
+  {
+    "title": "Garfield Gains Weight: His Second Book",
+    "author": {
+      "firstName": "Jim",
+      "lastName": "Davis"
+    }
+  },
+  {
+    "title": "The Hunchback of Notre-Dame",
+    "author": {
+      "firstName": "Victor",
+      "lastName": "Hugo"
+    }
+  },
+  {
+    "title": "How To Draw Manga",
+    "author": {
+      "firstName": "Katy",
+      "lastName": "Coope"
+    }
+  }
+]
