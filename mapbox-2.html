@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <title>Mini-Exercise #2</title>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet">
+    <style>
+        .font {
+            font-family: 'Xanh Mono', monospace;
+        }
+    </style>
 
 </head>
 <body>
 <h1></h1>
 <div id='map' style='width: 600px; height: 500px;'></div>
-
+<label for="input">Type an address:</label>
+<input type="text" id="input">
+<button id="btn">Click me to move someplace!</button>
 
 <script src="js/keys.js"></script>
 <script src="js/jquery-3.6.0.js"></script>
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
 <script>
     // Mini Exercise 2
     // TODO: Create an HTML file called mapbox-2.html. In this file, create a map centered
@@ -37,7 +47,7 @@
 
     var popup = new mapboxgl.Popup()
         .setLngLat(marker.getLngLat())
-        .setHTML('<h3>Statue of Liberty</h3>')
+        .setHTML('<h3 class="font">Statue of Liberty</h3>')
         .addTo(map);
 
     marker.setPopup(popup);
@@ -49,7 +59,19 @@
         marker.setPopup();
     })
 
-
+    $("#btn").click(function() {
+        var userInput = $("#input").val();
+        geocode(userInput, MAPBOX_ACCESS_TOKEN).then(function (info) {
+            console.log(info);
+            var newCenter = {
+                lng: info[0],
+                lat: info[1]
+            };
+            marker.setLngLat(newCenter);
+            popup.setHTML('<h3 class="font">' + userInput +  '</h3>');
+            map.flyTo({center: newCenter});
+        });
+    });
 
 
 
