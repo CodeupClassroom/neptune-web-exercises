@@ -44,3 +44,6 @@ console.log(emails);
 // es6
 let es6emails = users.map(user => user.email);
 
+let trilinguals = users.filter(function(user){
+    return user.languages.length >= 3;
+});
