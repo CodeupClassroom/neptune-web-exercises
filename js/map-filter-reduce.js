@@ -25,9 +25,9 @@
 
 // .map()
 
-let output = "";
-let prices = [32.99, 21.99, 6.99, 4.99, 12.99, 8.98, 5.99];
-let pricesAfterTax = [];
+// let output = "";
+// let prices = [32.99, 21.99, 6.99, 4.99, 12.99, 8.98, 5.99];
+// let pricesAfterTax = [];
 
 // pricesAfterTax = prices.map(function(price){
 //     let tax = (price * 0.0825).toFixed(2);
@@ -106,9 +106,36 @@ const cars = [
 // });
 
 // ES6
-const mileages = cars.map((car) => car.mileage);
+// const mileages = cars.map((car) => car.mileage);
+//
+// mileages.forEach(function(mileage){
+//     output = output + "<p>" + mileage + "</p>";
+//     $("#output").html(output);
+// });
 
-mileages.forEach(function(mileage){
-    output = output + "<p>" + mileage + "</p>";
+// .filter()
+
+// const under10K = cars.filter(function(car){
+//     return car.mileage < 10000;
+// });
+//
+// under10K.forEach(function(car){
+//     output = output + "<p>I found a " + car.make + " " + car.model + " with " + car.mileage + " miles.</p>";
+//     $("#output").html(output);
+// });
+
+let output = "";
+let prices = [32.99, 21.99, 6.99, 4.99, 12.99, 8.98, 5.99];
+
+var affordablesWithTax = prices.filter(function(price){
+    return price < 10;
+}).map(function(price){
+    let tax = (price * 0.0825).toFixed(2);
+    let total = (parseFloat(price) + parseFloat(tax)).toFixed(2);
+    return parseFloat(total);
+});
+
+affordablesWithTax.forEach(function(itemPrice){
+    output = output + "<p>" + itemPrice + "</p>";
     $("#output").html(output);
 });

@@ -40,6 +40,7 @@ let emails = users.map(function(user){
     user = user.email;
     return user;
 });
+console.log(emails);
 // es6
 let es6emails = users.map(user => user.email);
 
