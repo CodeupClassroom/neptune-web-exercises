@@ -141,6 +141,8 @@ let usersStringByKarenValadez = users.reduce((accu, user, index) => {
 }, "");
 console.log("The instructors are: " + usersStringByKarenValadez);
 
+// Bonus
+// One possible approach
 let userLanguages = users.reduce(function(accumulator, user){
     let listOfLanguages = accumulator.concat(user.languages);
     //let uniqueLanguages = new Set(listOfLanguages);
@@ -152,6 +154,8 @@ let uniqueLanguagesArray = Array.from(uniqueLanguages);
 
 console.log(userLanguages);
 console.log(uniqueLanguagesArray);
+
+// Joshua Williams' solution
 
 let uniqueArrayByJoshuaWilliams = users.reduce(function (nameArray, user, index, array) {
     nameArray.push(...user.languages); //Using the .push(...Array) separates the array when we push it rather than pushing it normally, and using .push(Array), where we would get an array inside of an array.
