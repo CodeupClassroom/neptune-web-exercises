@@ -153,7 +153,7 @@ let uniqueLanguagesArray = Array.from(uniqueLanguages);
 console.log(userLanguages);
 console.log(uniqueLanguagesArray);
 
-let uniqueArray = users.reduce(function (nameArray, user, index, array) {
+let uniqueArrayByJoshuaWilliams = users.reduce(function (nameArray, user, index, array) {
     nameArray.push(...user.languages); //Using the .push(...Array) separates the array when we push it rather than pushing it normally, and using .push(Array), where we would get an array inside of an array.
     // nameArray = nameArray.concat(user.languages); //Using the concat method we can combine arrays, back to back.
     // nameArray = [...nameArray,...user.languages];
@@ -166,4 +166,18 @@ let uniqueArray = users.reduce(function (nameArray, user, index, array) {
         // return getUniqueValues(nameArray);
     }
 }, []);
-console.log(uniqueArray);
+console.log(uniqueArrayByJoshuaWilliams);
+
+// Javier's final solution
+
+userLanguages = users.reduce(function(accumulator, user){
+    let languages = user.languages;
+    for (let i = 0; i < languages.length; i++){
+        if (!accumulator.includes(languages[i])){
+            accumulator.push(languages[i]);
+        }
+    }
+    return accumulator.sort();
+}, []);
+
+console.log(userLanguages);
