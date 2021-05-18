@@ -40,8 +40,20 @@ let postOptions = {
 }
 
 $("#addPercy").click(() => {
-    fetch("https://jungle-enshrined-couch.glitch.me/books", postOptions)
-        .then(getBooks);
+    fetch("https://jungle-enshrined-couch.glitch.me/books")
+        .then(resp => resp.json())
+        .then(books => {
+            for (let book of books) {
+                if(book.title !== newBook.title || book.author.firstName !== newBook.author.firstName || book.author.lastName !== newBook.author.lastName) {
+                    fetch("https://jungle-enshrined-couch.glitch.me/books", postOptions)
+                        .then(getBooks);
+                } else {
+                    alert("Hey, that book already exists!");
+                    break;
+                }
+            }
+        })
+
 });
 
 // PUT
@@ -85,3 +97,20 @@ let patchOptions = {
 fetch("https://jungle-enshrined-couch.glitch.me/books/7", patchOptions).then(getBooks);
 
 getBooks();
+
+// DELETE
+
+let deleteOptions = {
+    method: 'DELETE',
+    headers: {
+        'Content-Type': 'application/json',
+    }
+};
+
+$("#uniqueBooks").click(() => {
+    let inputVal = $("#id-to-delete").val();
+    fetch(`https://jungle-enshrined-couch.glitch.me/books/${inputVal}`, deleteOptions)
+        .then(getBooks);
+})
+
+
