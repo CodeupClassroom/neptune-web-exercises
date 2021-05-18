@@ -174,7 +174,7 @@ console.log(uniqueArrayByJoshuaWilliams);
 
 // Javier's final solution
 
-userLanguages = users.reduce(function(accumulator, user){
+let uniqueUserLanguages = users.reduce(function(accumulator, user){
     let languages = user.languages;
     for (let i = 0; i < languages.length; i++){
         if (!accumulator.includes(languages[i])){
@@ -184,4 +184,4 @@ userLanguages = users.reduce(function(accumulator, user){
     return accumulator.sort();
 }, []);
 
-console.log(userLanguages);
+console.log(uniqueUserLanguages);
