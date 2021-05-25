@@ -25,4 +25,8 @@
     }
 
     fizzBuzz(30);
+
+//    Write a function in JavaScript that returns the number 7.
+    const returnSeven = () => 7;
+
 })();
